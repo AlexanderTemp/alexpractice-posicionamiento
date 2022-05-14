@@ -134,6 +134,9 @@ button:hover{
 }
 /*MEDIA QUERIES FOR PHONES*/
 @media screen and (max-width: 600px){
+    header {
+        padding: 1rem 1rem;
+    }
     main{
         margin-top: 20vh;
         width: 92%;
