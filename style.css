@@ -39,7 +39,7 @@ body{
     right: 20vw;
 }
 header {
-    padding: 1rem 9rem;
+    padding: 1rem 4rem;
 }
 main {
     z-index: 1;
@@ -48,6 +48,7 @@ main {
     width: 80%;
 }
 h1 {
+    overflow-wrap: break-word;
     position: relative;
     z-index: 2;
     font-size: 10rem;
@@ -72,8 +73,8 @@ button{
     cursor: pointer;
 }
 button:hover{
-    background-color: var(--color-font) ;
-    border: ;
+    background-color: #f0f0f0 ;
+    box-shadow: 1px 1px 2px 1px var(--color-primary);
 }
 .twitter--logo{
     display: flex;
@@ -84,4 +85,86 @@ button:hover{
 }
 .twitter--logo>p{
     margin: auto 0.5rem;
+}
+
+/*MEDIA QUERIES FOR TABLETS*/
+@media screen and (max-width:1080px){
+    main{
+        margin-top: 25vh;
+        width: 90%;
+    }
+    h1{
+        font-size: 8rem;
+        margin-bottom: 5vh;
+    }
+    p{
+        width: 65%;
+        font-size: 1.5rem;
+    }
+    .p1{
+        top: 10vh;
+        right: 3vw;
+    }
+    .p2{
+        top:-32vh;
+        right: 3vw;
+    }
+    .p3{
+        top:-25vh;
+        left: 0vw;
+    }
+    .p4{
+        bottom: 0vh;
+        right: 5vw;
+    }
+    .p5 {
+        top: 1vh;
+        right: 20vw;
+    }
+    button {
+        margin-bottom: 20vh;
+    }
+    .twitter--logo {
+        margin-bottom: 10vh;
+    }
+}
+/*MEDIA QUERIES FOR PHONES*/
+@media screen and (max-width: 600px){
+    main{
+        margin-top: 20vh;
+        width: 95%;
+    }
+    h1{
+        font-size: 4.5rem;
+        margin-bottom: 5vh;
+    }
+    p{
+        width: 85%;
+        font-size: 1.5rem;
+    }
+    button{
+        padding: 1.5rem 1rem;
+        font-size: 1.5rem;
+    }
+    .p1{
+        display: none;
+    }
+    .p2{
+        top:-25vh;
+        right: -1vw;
+    }
+    .p3{
+        top:-10vh;
+        left: 5vw;
+    }
+    .p4{
+        bottom: 0vh;
+        right: 0vw;
+    }
+    .p5 {
+        display: none;
+    }
+    .twitter--logo{
+        margin-bottom: 5vh;
+    }
 }
