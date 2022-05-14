@@ -142,11 +142,11 @@ button:hover{
         width: 92%;
     }
     h1{
-        font-size: 3.8rem;
+        font-size: 3rem;
         margin-bottom: 5vh;
     }
     p{
-        width: 85%;
+        width: 90%;
         font-size: 1.5rem;
     }
     button{
@@ -172,6 +172,7 @@ button:hover{
         display: none;
     }
     .twitter--logo{
+        margin-top: 5vh;
         margin-bottom: 5vh;
     }
 }
